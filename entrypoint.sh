@@ -10,7 +10,7 @@ apt-get update && apt-get install -y \
 git clone $1
 git submodule update --init
 
-cp -r src/** appinventor-extensions/appinventor/components/src
+cp -r src/** exai/appinventor/components/src
 
 cd appinventor-extensions/appinventor/
 ant clean
@@ -19,7 +19,7 @@ ant extensions -Dproguard=1
 
 cd ../..
 
-cd appinventor-extensions/appinventor/components/build/extensions
+cd exai/appinventor/components/build/extensions
 file=$(dir)
 echo ::set-output name=file::$file
 
