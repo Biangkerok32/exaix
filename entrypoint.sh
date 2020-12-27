@@ -12,7 +12,7 @@ git submodule update --init
 
 cp -r src/** exai/appinventor/components/src
 
-cd appinventor-extensions/appinventor/
+cd exai/appinventor/
 ant clean
 ant MakeAuthKey
 ant extensions -Dproguard=1
